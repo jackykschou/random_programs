@@ -55,7 +55,7 @@ int main()
 	vector<reference_wrapper<A>> v2(v.begin(), v.end());
 
 	//change the data
-	for_each(v2.begin () , v2.end () , [](reference_wrapper<A>& a){
+	for_each(v2.begin () , v2.end () , [](A& a){
 		a.get().y = rand() % 10 + 1;
 	});
 
