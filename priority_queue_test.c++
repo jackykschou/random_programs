@@ -56,7 +56,7 @@ int main()
 
 	//change the data
 	for_each(v2.begin () , v2.end () , [](A& a){
-		a.get().y = rand() % 10 + 1;
+		a.y = rand() % 10 + 1;
 	});
 
 
@@ -68,3 +68,28 @@ int main()
 
 	return 0;
 }
+
+/*
+------output:------
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+1
+3
+7
+10
+6
+2
+5
+4
+8
+9
+*/
